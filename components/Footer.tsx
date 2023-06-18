@@ -1,3 +1,4 @@
+import { footerLinks } from "@/constants";
 import Image from "next/image";
 
 function Footer() {
@@ -12,7 +13,11 @@ function Footer() {
           </p>
         </div>
         <div className="footer__links">
-          
+          {footerLinks.map((link) => (
+            <div key={link.title} className="footer__link">
+              <h3 className="font-bold">{link.title}</h3>
+            </div>
+          ))}
         </div>
       </div>
     </footer>
