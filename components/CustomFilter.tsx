@@ -1,7 +1,9 @@
+import { CustomFilterProps } from "@/types";
 
-function CustomFilter() {
+
+function CustomFilter({title}: CustomFilterProps) {
   return (
-    <div>CustomFilter</div>
+    <div>{title}</div>
   );
 }
 

@@ -1,7 +1,15 @@
+'use client';
+
+import { SearchManufacturer } from ".";
 
 function SearchBar() {
+  const handleSearch = (e: any) => { };
   return (
-    <div>SearchBar</div>
+    <form className="searchbar" onSubmit={handleSearch}>
+      <div className="searchbar__item">
+        <SearchManufacturer />
+      </div>
+    </form>
   );
 }
 
