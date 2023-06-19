@@ -1,5 +1,6 @@
+import { SearchManufacturerProps } from "@/types";
 
-function SearchManufacturer() {
+function SearchManufacturer({manufacturer, setManufacturer}: SearchManufacturerProps) {
   return (
     <div>SearchManufacturer</div>
   );

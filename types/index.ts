@@ -14,3 +14,8 @@ export interface CustomFilterProps {
     filterOptions?: string[];
     handleChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
 };
+
+export interface SearchManufacturerProps {
+    manufacturer: string;
+    setManufacturer: (manufacturer: string) => void;
+}
