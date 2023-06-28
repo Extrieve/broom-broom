@@ -41,7 +41,7 @@ function SearchManufacturer({manufacturer, setManufacturer}: SearchManufacturerP
             afterLeave={() => setQuery('')}
           >
             <Combobox.Options className="search-manufacturer__options">
-              {filteredManufacturers.length > 0 ? filteredManufacturers.map((item) => (
+              {filteredManufacturers.map((item) => (
                 <Combobox.Option
                   key={item}
                   className={({ active }) => `${active ? 'bg-gray-100 text-white' : 'text-gray-900'} `}
@@ -49,14 +49,7 @@ function SearchManufacturer({manufacturer, setManufacturer}: SearchManufacturerP
                 >
                   {item}
                 </Combobox.Option>
-              )) : (
-              <Combobox.Option
-                value={query}
-                className="search-manufacturer__option"
-              >
-                Create "{query}"
-              </Combobox.Option>
-              )}
+              ))}
             </Combobox.Options>
           </Transition>
         </div>
